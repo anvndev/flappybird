@@ -1,0 +1,31 @@
+button {outline: none;}
+
+body {height: 100%; width: 100%; margin: 0;}
+
+/* Khung game */
+#container {position: relative; height: 480px; width: 350px; border: 1px solid #ccc; background: url('../sprites/bg.png'); overflow: hidden; margin: 80px auto;}
+
+/* Con chim */
+#bird {position: absolute; background: url('../sprites/bird.png'); height: 42px; width: 65px; background-size: contain; background-repeat: no-repeat; top: 20%; left: 15%;}
+
+/* Ống nước */
+.pole {position: absolute; height: 170px; width: 60px; background-color: #33cc33; right: -64px; border: 2px solid #000;}
+
+/* Ống trên */
+#pole_1 {top: 0; border-top: none;}
+
+/* Ống dưới */
+#pole_2 {bottom: 0; border-bottom: none;}
+
+/* Điểm */
+#score {font-size: 100px; position: absolute; width: 100%; text-align: center; padding: 10px; color: #555;}
+
+/* Nút chơi lại */
+#restart_btn {position: absolute; top: 0; width: 100%; padding: 20px; background-color: #fff; color: #555; font-size: 35px; border: none; cursor: pointer; display: none; border: 1px solid #e5e5e5;}
+
+/* Nút chơi game */
+#play_btn {display: block; position: absolute; width: 100%; height: 100%; background-color: transparent; border: 0; font-size: 30px; color: #555;}
+/* Âm thanh */
+#music {
+    display:none;
+  }

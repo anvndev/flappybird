@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Game Flappy Bird</title>
+    <link href="css/style.css" rel="stylesheet"/>
+</head>
+<form>
+    <!-- Tên:<br>
+    <input type="text" name="txtHoDem">
+    <br> -->
+    <script>
+        hoTen=prompt("Nhập họ tên của bạn:");
+        alert("Bạn hãy Click chuột vào màn hình nhé! " + hoTen);
+        alert("Chúc bạn may mắn " + hoTen );
+    </script>
+</form>
+<body>
+    <div id="container">   
+        <div id="bird"></div>
+        <div id="pole_1" class="pole"></div>
+        <div id="pole_2" class="pole"></div>
+        <button id="play_btn">Click vào để chơi</button>
+        <span id="score">0</span>
+    </div>
+    <button id="restart_btn">Chơi lại</button>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script type="text/javascript" src="https://itexpress.vn/API/files/it.snow.js"></script>
+    <audio controls autoplay loop>
+        <source src="sprites/musi.mp3" type="audio/mpeg">
+      </audio>
+      <div id="music">
+        <audio autoplay>
+          <source src="musi.mp3" type="audio/mpeg">
+        </audio>
+        </div>
+      <script>
+        function ThongTin(name, year){
+            var hoten = "Tên: " + name;
+            var namsinh = "Năm sinh: " + year;
+            var thongtin = hoten + "<br>" + namsinh; 
+            return thongtin;
+        }
+        var SinhVien = "Nghe nhạc ở đây bạn nhé<br>" + ThongTin("Albert", 2002);
+        document.write(SinhVien); 
+    </script> 
+</body>
+</html>
